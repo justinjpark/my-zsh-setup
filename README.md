@@ -1,28 +1,25 @@
 # my-zsh-setup
 
-> I use Apple's Terminal, but this can also be done in other macOS terminal emulators like [iTerm2](https://hyper.is) or [Hyper](https://hyper.is).
-
-<br>
+> I use Apple's Terminal
 
 **Example:**
 <img src="https://github.com/sindresorhus/pure/blob/master/screenshot.png" width="800">
 
 **Requirements:**
 - [pure](https://github.com/sindresorhus/pure#oh-my-zsh)
-- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-    - [Homebrew formula](https://formulae.brew.sh/formula/zsh-syntax-highlighting)
 - [terminal-snazzy](https://github.com/sindresorhus/terminal-snazzy)
+- zsh-completions
+    - [Github repo](https://github.com/zsh-users/zsh-completions)
+    - [Homebrew formula](https://github.com/zsh-users/zsh-completions)
+- zsh-syntax-highlighting
+    - [Github repo](https://github.com/zsh-users/zsh-syntax-highlighting)
+    - [Homebrew formula](https://formulae.brew.sh/formula/zsh-syntax-highlighting)
+- zsh-autosuggestions
+    - [Github repo](https://github.com/zsh-users/zsh-autosuggestions)
+    - [Homebrew formula](https://github.com/zsh-users/zsh-autosuggestions)
 
 **Steps:**
-1. Download pure, zsh-syntax-highlighting (brew), and terminal-snazzy
-2. Open Terminal.app. Import the Snazzy.terminal file, then make Snazzy your default profile
-3. Add these lines to the **end** of your .zshrc 
-    ```
-    # Add pure to $fpath, initialize the prompt system, choose pure
-    fpath+=$HOME/.zsh/pure
-    autoload -U promptinit; promptinit
-    prompt pure
-
-    # enable syntax highlighting for zsh
-    source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-    ```
+1. Download pure and terminal-snazzy
+2. Open Terminal.app, import the Snazzy.terminal file, then make Snazzy your default profile
+3. Run `brew install zsh-completions zsh-syntax-highlighting zsh-autosuggestions`
+4. Update your ~/.zshrc file with the necessary lines

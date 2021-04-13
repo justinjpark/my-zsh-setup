@@ -1,4 +1,4 @@
-export PATH=/usr/local/opt/python@3.9/libexec/bin:$PATH
+export PATH="/usr/local/opt/python@3.9/libexec/bin:$PATH"
 
 # Add Visual Studio Code (code)
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
@@ -17,18 +17,13 @@ if type brew &>/dev/null; then
   compinit
 fi
 
+# Fish shell like syntax highlighting for zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Fish-like autosuggestions for zsh
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # Add pure to $fpath, initialize the prompt system, choose pure
 fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
-
-#disable MENU_COMPELTE
-#unsetopt MENU_COMPLETE
-#setopt MENU_COMPLETE
-
-# To enable syntax highlighting for zsh
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# To activate the autosuggestions
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
