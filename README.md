@@ -1,9 +1,9 @@
 # my-zsh-setup
 
-> I use Apple's Terminal
+> Terminal is the terminal emulator included in the macOS operating system by Apple
 
 **Example:**
-<img src="https://github.com/sindresorhus/pure/blob/master/screenshot.png" width="800">
+<img src="https://github.com/sindresorhus/pure/blob/main/screenshot.png" width="800">
 
 **Requirements:**
 - [pure](https://github.com/sindresorhus/pure#oh-my-zsh)
